@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Italiana</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="home">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="imagens/logo.png.png" alt="Pizzaria Italiana">
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#Cardápio">Nosso Cardápio</a></li>
+                <li><a href="#sobre">Quem Somos</a></li>
+                <li><a href="#Localizacao">Localização</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul> 
+            <div class="nav-actions">
+               <button class="btn-login" onclick="openLogin()">LOGIN</button>
+               <button class="btn-carrinho">CARRINHO</button>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-content">
+            </div>
+        </section>
+    </header>
+
+<main>
+    <section id="Cardápio" class="cardapio">
+    <div class="container">
+ 
+        <p class="cardapio-eyebrow">feito com amor</p>
+        <h2 class="titulo-sessao">Nosso Cardápio</h2>
+ 
+        <div class="menu-tabs">
+            <button class="menu-tab active" onclick="switchTab('salgadas', this)">Pizzas Salgadas</button>
+            <button class="menu-tab" onclick="switchTab('doces', this)">Pizzas Doces</button>
+        </div>
+ 
+        <div id="panel-salgadas" class="menu-panel active">
+            <div class="card-grid">
+ 
+                <div class="pizza-card destaque">
+                    <img src="imagens/pizza-calabresa.png" alt="Pizza Calabrese Premium" class="pizza-img">
+                    <div class="pizza-info">
+                        <span class="pizza-badge badge-destaque">Destaque do Chef</span>
+                        <h3 class="pizza-nome">Calabrese Premium</h3>
+                        <p class="pizza-desc">Linguiça calabresa defumada em fatias finas, cebolas roxas caramelizadas no vinho tinto e azeitonas pretas chilenas sobre uma base de mussarela cremosa.</p>
+                        <div class="pizza-footer">
+                            <div class="pizza-preco"><span class="preco-rs">R$</span>68</div>
+                            <button class="btn-add-cart" data-name="Calabrese Premium" data-price="68">Adicionar</button>
+                            <span class="pizza-tamanho">Grande • 35cm</span>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="pizza-card">
+                    <img src="imagens/queijo.png" alt="Pizza Quatro Queijos Dourados" class="pizza-img">
+                    <div class="pizza-info">
+                        <span class="pizza-badge badge-classica">Quatro Queijos</span>
+                        <h3 class="pizza-nome">Quatro Queijos Dourados</h3>
+                        <p class="pizza-desc">Uma fusão nobre de quatro queijos: Mozzarella, Gorgonzola dolce, Parmesão maturado 12 meses e o toque suave do Catupiry original.</p>
+                        <div class="pizza-footer">
+                            <div class="pizza-preco"><span class="preco-rs">R$</span>72</div>
+                            <button class="btn-add-cart" data-name="Quatro Queijos Dourados" data-price="72">Adicionar</button>
+                            <span class="pizza-tamanho">Grande • 35cm</span>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="pizza-card">
+                    <img src="imagens/pizza-manjericao.png" alt="Pizza Marguerita" class="pizza-img">
+                    <div class="pizza-info">
+                        <span class="pizza-badge badge-classica">Clássica</span>
+                        <h3 class="pizza-nome">Marguerita</h3>
+                        <p class="pizza-desc">A essência da Itália. Molho de tomates pelati italianos, mozzarella de búfala artesanal, folhas de manjericão fresco colhidas na hora e um fio de azeite extra virgem trufado.</p>
+                        <div class="pizza-footer">
+                            <div class="pizza-preco"><span class="preco-rs">R$</span>95</div>
+                            <button class="btn-add-cart" data-name="Marguerita" data-price="95">Adicionar</button>
+                            <span class="pizza-tamanho">Grande • 35cm</span>
+                        </div>
+                    </div>
+                </div>
+ 
+            </div>
+        </div>
+ 
+        <div id="panel-doces" class="menu-panel">
+            <div class="card-grid">
+ 
+                <div class="pizza-card destaque card-doce">
+                    <img src="imagens/pizzadoce-morango.png" alt="Pizza Chocolate Belga" class="pizza-img">
+                    <div class="pizza-info">
+                        <span class="pizza-badge badge-doce">Favorita</span>
+                        <h3 class="pizza-nome">Chocolate Belga</h3>
+                        <p class="pizza-desc">Ganache de chocolate belga ao leite, coberta com raspas de chocolate meio amargo e morangos frescos selecionados.</p>
+                        <div class="pizza-footer">
+                            <div class="pizza-preco"><span class="preco-rs">R$</span>75</div>
+                            <button class="btn-add-cart" data-name="Chocolate Belga" data-price="75">Adicionar</button>
+                            <span class="pizza-tamanho">Grande • 35cm</span>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="pizza-card card-doce">
+                    <img src="imagens/pizzadoce-nu.png" alt="Pizza Ninho com Nutella" class="pizza-img">
+                    <div class="pizza-info">
+                        <span class="pizza-badge badge-doce">Cremosa</span>
+                        <h3 class="pizza-nome">Ninho com Nutella</h3>
+                        <p class="pizza-desc">Creme aveludado de leite Ninho coberto com generosas colheradas de Nutella original e finalizado com leite em pó polvilhado.</p>
+                        <div class="pizza-footer">
+                            <div class="pizza-preco"><span class="preco-rs">R$</span>78</div>
+                            <button class="btn-add-cart" data-name="Ninho com Nutella" data-price="78">Adicionar</button>
+                            <span class="pizza-tamanho">Grande • 35cm</span>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="pizza-card card-doce">
+                    <img src="imagens/pizzadoce-chocolate.png" alt="Pizza Banoffee" class="pizza-img">
+                    <div class="pizza-info">
+                        <span class="pizza-badge badge-especial">Especial</span>
+                        <h3 class="pizza-nome">Banoffee Italiana</h3>
+                        <p class="pizza-desc">Base de doce de leite cremoso, fatias de banana prata, finalizada com um toque de canela e chantilly levemente batido.</p>
+                        <div class="pizza-footer">
+                            <div class="pizza-preco"><span class="preco-rs">R$</span>70</div>
+                            <button class="btn-add-cart" data-name="Banoffee Italiana" data-price="70">Adicionar</button>
+                            <span class="pizza-tamanho">Grande • 35cm</span>
+                        </div>
+                    </div>
+                </div>
+ 
+            </div>
+        </div>
+ 
+    </div>
+</section>
+
+<section id="Experiencia" class="video-section">
+    <video autoplay loop muted playsinline poster="imagens/poster-video.jpg" class="video-bg">
+        <source src="videos/12717312_2160_3840_25fps.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos embutidos.
+    </video>
+
+    <div class="video-overlay">
+        <div class="container video-content">
+            </div>
+    </div>
+</section>
+
+<section class="qs-section">
+    <div class="qs-bg-circle" style="width:400px;height:400px;top:-120px;right:-100px;"></div>
+    <div class="qs-bg-circle" style="width:260px;height:260px;bottom:-80px;left:-60px;"></div>
+    
+    <p class="qs-subtitle">nossa história</p>
+    <h2 class="qs-section-title">Quem Somos</h2>
+    
+    <div class="qs-grid">
+    <div class="qs-card light">
+      <span class="qs-tag">Essência</span>
+      <div class="qs-icon-wrap gold">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c97734" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/>
+          <path d="M12 8v4l3 3"/>
+        </svg>
+      </div>
+      <h3 class="qs-card-title light-text">Nossa <span class="accent">Essência</span></h3>
+      <p class="qs-card-text light-text">A Pizzaria Italiana nasceu do desejo de trazer para Vitória a experiência genuína das vilas italianas.</p>
+      <div class="qs-stat-row">
+        <div class="qs-stat">
+          <div class="qs-stat-num">12+</div>
+          <div class="qs-stat-label">Anos de tradição</div>
+        </div>
+        <div class="qs-stat">
+          <div class="qs-stat-num">100%</div>
+          <div class="qs-stat-label">Ingredientes selecionados</div>
+        </div>
+        <div class="qs-stat">
+          <div class="qs-stat-num">40+</div>
+          <div class="qs-stat-label">Sabores no cardápio</div>
+        </div>
+       </div>
+    </div>
+ 
+    <div class="qs-card dark">
+      <span class="qs-tag dark">Artesanal</span>
+      <div class="qs-icon-wrap cream">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c97734" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+      </div>
+      <h3 class="qs-card-title dark-text">O Segredo da <span class="accent-light">Massa</span></h3>
+      <p class="qs-card-text dark-text">Perfeição não aceita pressa. Nossa massa fermenta por 72 horas.</p>
+      <div class="qs-flame-row">
+        <div class="flame on"></div><div class="flame on"></div><div class="flame on"></div>
+        <div class="flame on"></div><div class="flame on"></div><div class="flame"></div><div class="flame"></div>
+      </div>
+      <p class="qs-card-text dark-text" style="font-size:12px;">Temperatura ideal: 485°C no forno a lenha</p>
+    </div>
+ 
+    <div class="qs-card wide light">
+      <div>
+        <span class="qs-tag">Qualidade</span>
+        <h3 class="qs-card-title light-text">Compromisso com a <span class="accent">Qualidade</span></h3>
+        <p class="qs-card-text light-text">Do molho de tomates pelati importados ao manjericão fresco colhido a dedo.</p>
+        <div class="qs-check-list">
+          <span class="qs-check-item">Tomates San Marzano</span>
+          <span class="qs-check-item">Mozzarella di bufala</span>
+          <span class="qs-check-item">Azeite extra virgem DOP</span>
+          <span class="qs-check-item">Forno a lenha artesanal</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="Localizacao" class="ambiente">
+    <div class="ambiente-bg-foto"></div>
+    <div class="container ambiente-grid">
+        <div class="ambiente-foto">
+            <img src="imagens/restaurante.png" alt="Nosso ambiente ao ar livre">
+        </div>
+        <div class="ambiente-info">
+            <span class="ambiente-tag">Nosso espaço</span>
+            <h2 class="ambiente-titulo">Um ambiente feito<br>para <em>você</em></h2>
+            <div class="ambiente-divider"></div>
+            <p class="ambiente-descricao">Nosso jardim ao ar livre foi pensado para toda a família.</p>
+            <div class="ambiente-badges">
+                <span class="ambiente-badge">Espaço kids</span>
+                <span class="ambiente-badge">Ao ar livre</span>
+                <span class="ambiente-badge">Iluminação especial</span>
+            </div>
+            <a href="#" class="ambiente-cta">Reserve sua mesa →</a>
+        </div>
+    </div>
+</section>
+
+<footer id="contato" class="footer-pizzaria">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <p class="footer-brand-name">Pizzaria Italiana</p>
+      <p class="footer-brand-tagline">Vitória — ES</p>
+      <p class="footer-brand-desc">Tradição italiana e um forno a lenha que nunca apaga.</p>
+      <a href="tel:27999999999" class="footer-whats">(27) 9 9999-9999</a>
+    </div>
+ 
+    <div class="footer-col">
+      <p class="footer-col-title">Localização</p>
+      <div class="footer-divider-gold"></div>
+      <p class="footer-info-value">Rua das Pizzas, 123<br>Vitória – ES</p>
+    </div>
+ 
+    <div class="footer-col">
+      <p class="footer-col-title">Horários</p>
+      <div class="footer-divider-gold"></div>
+      <div class="footer-horario-item"><span class="footer-horario-dia">Terça – Quinta</span> 18h – 23h</div>
+      <div class="footer-horario-item"><span class="footer-horario-dia">Sexta – Sábado</span> 18h – 00h</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2026 Pizzaria Italiana — Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<div id="cart-modal" class="modal-cart-wrapper">
+    <div class="modal-cart-content">
+        <button class="close-modal">&times;</button>
+        <h2 class="titulo-sessao" style="font-size: 1.8rem; margin-bottom: 20px; color: #fff;">Seu Carrinho</h2>
+        <div id="cart-items" class="cart-item-list"></div>
+        <div style="border-top: 1px solid #d4a55a; padding-top: 15px; margin-top: 15px;">
+            <p>Total: <strong style="color: #c97734;">R$ <span id="cart-total-value">0.00</span></strong></p>
+        </div>
+        <div class="checkout-form">
+            <input type="text" id="address" class="cart-input" placeholder="Endereço de entrega">
+            <select id="delivery-method" class="cart-select">
+                <option value="Entrega">Delivery</option>
+                <option value="Retirada">Retirada</option>
+            </select>
+            <select id="payment-method" class="cart-select">
+                <option value="Pix">Pix</option>
+                <option value="Cartão">Cartão</option>
+            </select>
+        </div>
+        <button id="checkout-btn" class="btn-finalize">FINALIZAR PEDIDO NO WHATSAPP</button>
+    </div>
+</div>
+
+<div id="custom-alert" class="custom-alert">
+    <div class="alert-content">
+        <p id="alert-message"></p>
+        <button onclick="closeAlert()">OK</button>
+    </div>
+</div>
+
+<div id="login-modal" class="modal-cart-wrapper" style="display: none;">
+    <div class="modal-cart-content login-box">
+        <button class="close-modal" onclick="closeLogin()">X</button>
+        <div class="login-tabs">
+            <button id="tab-login" class="active-tab" onclick="showTab('login')">Entrar</button>
+            <button id="tab-signup" onclick="showTab('signup')">Cadastrar</button>
+        </div>
+
+        <div id="form-login">
+            <h2 class="titulo-sessao">Acessar Conta</h2>
+            <label class="label-login">Celular</label>
+            <input type="tel" id="login-phone" class="cart-input" placeholder="+55 (27) 99999-9999">
+            <div id="recaptcha-container" style="margin: 10px 0;"></div>
+            <button class="btn-finalize" onclick="handleSignup()">ENTRAR COM SMS</button>
+        </div>
+
+        <div id="form-signup" style="display: none;">
+            <h2 class="titulo-sessao">Criar Conta</h2>
+            <label class="label-login">Nome Completo</label>
+            <input type="text" id="signup-name" class="cart-input" placeholder="Seu nome">
+            <label class="label-login">Celular</label>
+            <input type="tel" id="signup-phone" class="cart-input" placeholder="+55 (27) 99999-9999">
+            <button class="btn-finalize" onclick="handleSignup()">CADASTRAR</button>
+        </div>
+
+        <div id="step-2" style="display: none;">
+            <p class="txt-informativo">Digite o código de 6 dígitos:</p>
+            <input type="text" id="sms-code" class="cart-input" placeholder="000000" maxlength="6" style="text-align: center; letter-spacing: 5px;">
+            <button class="btn-finalize" onclick="validateLogin()">CONFIRMAR</button>
+        </div>
+    </div>
+</div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
