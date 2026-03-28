@@ -5,7 +5,14 @@
 // EVENTOS AO CARREGAR O DOM
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- ANIMAÇÕES SCROLL REVEAL (Intersection Observer) ---
+    // Verifica se usuário já está logado
+    const usuario = JSON.parse(localStorage.getItem('usuario'));
+    if (usuario) {
+        const loginBtn = document.querySelector('.btn-login');
+        if (loginBtn) loginBtn.innerText = "PERFIL";
+    }
+
+    // --- ANIMAÇÕES SCROLL REVEAL ---
     const revealElements = document.querySelectorAll(
         '.hero, .sobre-section, .cardapio, .titulo-sessao, ' +
         '.pizza-card, .video-section, .qs-section, .qs-card, ' +
@@ -189,6 +196,11 @@ if (checkoutBtn) {
 
 // --- AUTENTICAÇÃO TWILIO ---
 window.openLogin = function() {
+    const usuario = JSON.parse(localStorage.getItem('usuario'));
+    if (usuario) {
+        abrirPerfil();
+        return;
+    }
     const loginModal = document.getElementById('login-modal');
     if (loginModal) {
         loginModal.style.display = 'flex';
@@ -249,7 +261,6 @@ window.handleSignup = async function() {
             document.getElementById('form-signup').style.display = 'none';
             document.getElementById('form-login').style.display = 'none';
             document.getElementById('step-2').style.display = 'block';
-            // Salva o número para usar na verificação
             window._phoneToVerify = phone;
         } else {
             showAlert("Erro ao enviar código. Tente novamente.");
@@ -274,10 +285,9 @@ window.validateLogin = async function() {
         });
         const data = await res.json();
         if (data.success) {
-            showAlert("Sucesso! Bem-vinda à Pizzaria Italiana.");
-            closeLogin();
-            const loginBtn = document.querySelector('.btn-login');
-            if(loginBtn) loginBtn.innerText = "PERFIL";
+            // Mostra formulário de perfil
+            document.getElementById('step-2').style.display = 'none';
+            document.getElementById('step-3').style.display = 'block';
         } else {
             showAlert("Código incorreto ou expirado.");
         }
@@ -286,10 +296,58 @@ window.validateLogin = async function() {
     }
 };
 
+window.salvarPerfil = function() {
+    const nome = document.getElementById('perfil-nome').value;
+    const endereco = document.getElementById('perfil-endereco').value;
+
+    if (!nome) {
+        showAlert("Por favor, insira seu nome.");
+        return;
+    }
+
+    const usuario = {
+        nome,
+        endereco,
+        telefone: window._phoneToVerify,
+        pedidos: []
+    };
+
+    localStorage.setItem('usuario', JSON.stringify(usuario));
+    closeLogin();
+
+    const loginBtn = document.querySelector('.btn-login');
+    if (loginBtn) loginBtn.innerText = "PERFIL";
+
+    showToast(`Bem-vinda, ${nome}! 🍕`);
+};
+
+// --- PERFIL ---
+function abrirPerfil() {
+    const usuario = JSON.parse(localStorage.getItem('usuario'));
+    if (!usuario) return;
+
+    const modal = document.getElementById('perfil-modal');
+    document.getElementById('perfil-nome-display').innerText = usuario.nome;
+    document.getElementById('perfil-tel-display').innerText = usuario.telefone;
+    document.getElementById('perfil-end-display').innerText = usuario.endereco || 'Não informado';
+    modal.style.display = 'flex';
+}
+
+window.fecharPerfil = function() {
+    document.getElementById('perfil-modal').style.display = 'none';
+};
+
+window.sairConta = function() {
+    localStorage.removeItem('usuario');
+    const loginBtn = document.querySelector('.btn-login');
+    if (loginBtn) loginBtn.innerText = "LOGIN";
+    fecharPerfil();
+    showToast("Você saiu da conta!");
+};
+
 // --- MÁSCARA DE TELEFONE ---
-const inputPhone = document.getElementById('signup-phone');
-if (inputPhone) {
-    inputPhone.addEventListener('input', (e) => {
+function aplicarMascara(input) {
+    input.addEventListener('input', (e) => {
         let value = e.target.value.replace(/\D/g, "");
         if (!value.startsWith("55")) value = "55" + value;
         value = value.slice(0, 13);
@@ -301,10 +359,16 @@ if (inputPhone) {
         e.target.value = formatted;
     });
 
-    inputPhone.addEventListener('focus', (e) => {
+    input.addEventListener('focus', (e) => {
         if (!e.target.value) e.target.value = "+55 ";
     });
 }
+
+const inputPhone = document.getElementById('signup-phone');
+if (inputPhone) aplicarMascara(inputPhone);
+
+const inputLoginPhone = document.getElementById('login-phone');
+if (inputLoginPhone) aplicarMascara(inputLoginPhone);
 
 // Auxiliar para as abas do Menu de Pizzas
 window.switchTab = function(panel, btn) {

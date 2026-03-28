@@ -13,7 +13,6 @@
             <div class="logo">
                 <img src="imagens/logo.png.png" alt="Pizzaria Italiana">
             </div>
-
             <ul class="nav-links">
                 <li><a href="#Cardápio">Nosso Cardápio</a></li>
                 <li><a href="#sobre">Quem Somos</a></li>
@@ -25,28 +24,22 @@
                <button class="btn-carrinho">CARRINHO</button>
             </div>
         </nav>
-
         <section class="hero">
-            <div class="hero-content">
-            </div>
+            <div class="hero-content"></div>
         </section>
     </header>
 
 <main>
     <section id="Cardápio" class="cardapio">
     <div class="container">
- 
         <p class="cardapio-eyebrow">feito com amor</p>
         <h2 class="titulo-sessao">Nosso Cardápio</h2>
- 
         <div class="menu-tabs">
             <button class="menu-tab active" onclick="switchTab('salgadas', this)">Pizzas Salgadas</button>
             <button class="menu-tab" onclick="switchTab('doces', this)">Pizzas Doces</button>
         </div>
- 
         <div id="panel-salgadas" class="menu-panel active">
             <div class="card-grid">
- 
                 <div class="pizza-card destaque">
                     <img src="imagens/pizza-calabresa.png" alt="Pizza Calabrese Premium" class="pizza-img">
                     <div class="pizza-info">
@@ -60,7 +53,6 @@
                         </div>
                     </div>
                 </div>
- 
                 <div class="pizza-card">
                     <img src="imagens/queijo.png" alt="Pizza Quatro Queijos Dourados" class="pizza-img">
                     <div class="pizza-info">
@@ -74,7 +66,6 @@
                         </div>
                     </div>
                 </div>
- 
                 <div class="pizza-card">
                     <img src="imagens/pizza-manjericao.png" alt="Pizza Marguerita" class="pizza-img">
                     <div class="pizza-info">
@@ -88,13 +79,10 @@
                         </div>
                     </div>
                 </div>
- 
             </div>
         </div>
- 
         <div id="panel-doces" class="menu-panel">
             <div class="card-grid">
- 
                 <div class="pizza-card destaque card-doce">
                     <img src="imagens/pizzadoce-morango.png" alt="Pizza Chocolate Belga" class="pizza-img">
                     <div class="pizza-info">
@@ -108,7 +96,6 @@
                         </div>
                     </div>
                 </div>
- 
                 <div class="pizza-card card-doce">
                     <img src="imagens/pizzadoce-nu.png" alt="Pizza Ninho com Nutella" class="pizza-img">
                     <div class="pizza-info">
@@ -122,7 +109,6 @@
                         </div>
                     </div>
                 </div>
- 
                 <div class="pizza-card card-doce">
                     <img src="imagens/pizzadoce-chocolate.png" alt="Pizza Banoffee" class="pizza-img">
                     <div class="pizza-info">
@@ -136,10 +122,8 @@
                         </div>
                     </div>
                 </div>
- 
             </div>
         </div>
- 
     </div>
 </section>
 
@@ -148,20 +132,16 @@
         <source src="videos/12717312_2160_3840_25fps.mp4" type="video/mp4">
         Seu navegador não suporta vídeos embutidos.
     </video>
-
     <div class="video-overlay">
-        <div class="container video-content">
-            </div>
+        <div class="container video-content"></div>
     </div>
 </section>
 
 <section class="qs-section">
     <div class="qs-bg-circle" style="width:400px;height:400px;top:-120px;right:-100px;"></div>
     <div class="qs-bg-circle" style="width:260px;height:260px;bottom:-80px;left:-60px;"></div>
-    
     <p class="qs-subtitle">nossa história</p>
     <h2 class="qs-section-title">Quem Somos</h2>
-    
     <div class="qs-grid">
     <div class="qs-card light">
       <span class="qs-tag">Essência</span>
@@ -188,7 +168,6 @@
         </div>
        </div>
     </div>
- 
     <div class="qs-card dark">
       <span class="qs-tag dark">Artesanal</span>
       <div class="qs-icon-wrap cream">
@@ -204,7 +183,6 @@
       </div>
       <p class="qs-card-text dark-text" style="font-size:12px;">Temperatura ideal: 485°C no forno a lenha</p>
     </div>
- 
     <div class="qs-card wide light">
       <div>
         <span class="qs-tag">Qualidade</span>
@@ -250,13 +228,11 @@
       <p class="footer-brand-desc">Tradição italiana e um forno a lenha que nunca apaga.</p>
       <a href="tel:27999999999" class="footer-whats">(27) 9 9999-9999</a>
     </div>
- 
     <div class="footer-col">
       <p class="footer-col-title">Localização</p>
       <div class="footer-divider-gold"></div>
       <p class="footer-info-value">Rua das Pizzas, 123<br>Vitória – ES</p>
     </div>
- 
     <div class="footer-col">
       <p class="footer-col-title">Horários</p>
       <div class="footer-divider-gold"></div>
@@ -269,6 +245,7 @@
   </div>
 </footer>
 
+<!-- MODAL CARRINHO -->
 <div id="cart-modal" class="modal-cart-wrapper">
     <div class="modal-cart-content">
         <button class="close-modal">&times;</button>
@@ -292,6 +269,7 @@
     </div>
 </div>
 
+<!-- ALERTA CUSTOMIZADO -->
 <div id="custom-alert" class="custom-alert">
     <div class="alert-content">
         <p id="alert-message"></p>
@@ -299,6 +277,7 @@
     </div>
 </div>
 
+<!-- MODAL LOGIN -->
 <div id="login-modal" class="modal-cart-wrapper" style="display: none;">
     <div class="modal-cart-content login-box">
         <button class="close-modal" onclick="closeLogin()">X</button>
@@ -311,7 +290,6 @@
             <h2 class="titulo-sessao">Acessar Conta</h2>
             <label class="label-login">Celular</label>
             <input type="tel" id="login-phone" class="cart-input" placeholder="+55 (27) 99999-9999">
-            <div id="recaptcha-container" style="margin: 10px 0;"></div>
             <button class="btn-finalize" onclick="handleSignup()">ENTRAR COM SMS</button>
         </div>
 
@@ -329,6 +307,32 @@
             <input type="text" id="sms-code" class="cart-input" placeholder="000000" maxlength="6" style="text-align: center; letter-spacing: 5px;">
             <button class="btn-finalize" onclick="validateLogin()">CONFIRMAR</button>
         </div>
+
+        <div id="step-3" style="display: none;">
+            <h2 class="titulo-sessao">Complete seu Perfil</h2>
+            <label class="label-login">Nome Completo</label>
+            <input type="text" id="perfil-nome" class="cart-input" placeholder="Seu nome completo">
+            <label class="label-login">Endereço</label>
+            <input type="text" id="perfil-endereco" class="cart-input" placeholder="Seu endereço">
+            <button class="btn-finalize" onclick="salvarPerfil()">SALVAR E ENTRAR</button>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL PERFIL -->
+<div id="perfil-modal" class="modal-cart-wrapper" style="display: none;">
+    <div class="modal-cart-content">
+        <button class="close-modal" onclick="fecharPerfil()">×</button>
+        <h2 class="titulo-sessao" style="font-size: 1.8rem; margin-bottom: 20px; color: #fff;">Meu Perfil</h2>
+        <div style="margin: 20px 0;">
+            <p style="color: #d4a55a; font-size: 0.8rem; margin-bottom: 5px;">NOME</p>
+            <p id="perfil-nome-display" style="color: #fff; font-size: 1.1rem; margin-bottom: 15px;"></p>
+            <p style="color: #d4a55a; font-size: 0.8rem; margin-bottom: 5px;">TELEFONE</p>
+            <p id="perfil-tel-display" style="color: #fff; font-size: 1.1rem; margin-bottom: 15px;"></p>
+            <p style="color: #d4a55a; font-size: 0.8rem; margin-bottom: 5px;">ENDEREÇO</p>
+            <p id="perfil-end-display" style="color: #fff; font-size: 1.1rem; margin-bottom: 15px;"></p>
+        </div>
+        <button class="btn-finalize" onclick="sairConta()" style="background: #8b0000;">SAIR DA CONTA</button>
     </div>
 </div>
 
