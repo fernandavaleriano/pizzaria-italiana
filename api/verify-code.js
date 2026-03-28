@@ -1,9 +1,9 @@
-const twilio = require('twilio');
-
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
     if (req.method !== 'POST') return res.status(405).end();
 
     const { phone, code } = req.body;
+
+    const twilio = require('twilio');
     const client = twilio(
         process.env.TWILIO_ACCOUNT_SID,
         process.env.TWILIO_AUTH_TOKEN
