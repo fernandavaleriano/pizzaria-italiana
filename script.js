@@ -238,7 +238,11 @@ window.showTab = function(tab) {
 window.handleSignup = async function() {
     const nameEl = document.getElementById('signup-name');
     const name = nameEl ? nameEl.value : '';
-    const phoneInput = document.getElementById('signup-phone') || document.getElementById('login-phone');
+    
+    // Pega o campo que tem valor preenchido
+    const signupPhone = document.getElementById('signup-phone');
+    const loginPhone = document.getElementById('login-phone');
+    const phoneInput = (loginPhone && loginPhone.value.length > 3) ? loginPhone : signupPhone;
     const phoneClean = phoneInput.value.replace(/\D/g, "");
     const phone = "+" + phoneClean;
 
