@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000; 
+}
+
+.titulo-sessao {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    color: #2c1a0e;
+    text-align: center;
+    margin: 0 0 48px;
+    letter-spacing: -1px;
+    font-weight: 700;
+    text-transform: none;
+    color: #9a7055;
+}

@@ -1,0 +1,185 @@
+/* ===== RESPONSIVO MOBILE ===== */
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar {
+        padding: 15px 5%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .logo img {
+        height: 70px;
+    }
+
+    .btn-login, .btn-carrinho {
+        padding: 6px 14px;
+        font-size: 0.7rem;
+    }
+
+    /* HERO */
+    .hero {
+        height: 60vh;
+    }
+
+    /* CARDÁPIO */
+    .cardapio {
+        padding: 50px 15px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 0 15px;
+    }
+
+    .pizza-card.destaque {
+        grid-column: span 1;
+        flex-direction: column;
+    }
+
+    .pizza-card.destaque .pizza-img {
+        width: 100%;
+        height: 200px;
+        min-height: unset;
+    }
+
+    .titulo-sessao {
+        font-size: 1.8rem;
+    }
+
+    .menu-tabs {
+        flex-wrap: wrap;
+        padding: 0 15px;
+    }
+
+    /* RODAPÉ DO CARD */
+    .pizza-footer {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-top: 20px;
+    }
+
+    .pizza-preco {
+        font-size: 1.3rem;
+    }
+
+    .btn-add-cart {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    .pizza-tamanho {
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    /* VÍDEO */
+    .video-section {
+        height: 40vh;
+    }
+
+    .video-bg {
+        width: 100%;
+        height: 100%;
+        min-width: unset;
+        min-height: unset;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    /* QUEM SOMOS */
+    .qs-section {
+        padding: 50px 20px;
+    }
+
+    .qs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .qs-card.wide {
+        grid-column: span 1;
+        grid-template-columns: 1fr;
+    }
+
+    .qs-section-title {
+        font-size: 28px;
+    }
+
+    .qs-stat-row {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    /* AMBIENTE */
+    .ambiente-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 50px 20px;
+    }
+
+    .ambiente-foto::before {
+        display: none;
+    }
+
+    .ambiente-titulo {
+        font-size: 28px;
+    }
+
+    /* FOOTER */
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 40px 20px;
+    }
+
+    .footer-bottom {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* MODAIS */
+    .modal-cart-content {
+        padding: 20px;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    #perfil-modal .modal-cart-content {
+        padding: 20px;
+    }
+}
+
+/* TELAS MÉDIAS (tablets) */
+@media (max-width: 1024px) and (min-width: 769px) {
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pizza-card.destaque {
+        grid-column: span 2;
+    }
+
+    .ambiente-grid {
+        gap: 30px;
+        padding: 60px 30px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .qs-grid {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
