@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
 /* PROJETO: PIZZARIA ITALIANA
    DESENVOLVEDOR: FERNANDA VALERIANO
 */
@@ -214,7 +215,7 @@ if (checkoutBtn) {
     });
 }
 
-// --- AUTENTICAÇÃO TWILIO ---
+// --- AUTENTICAÇÃO SIMULADA PARA PORTFÓLIO ---
 window.openLogin = function() {
     const usuario = JSON.parse(localStorage.getItem('usuario'));
     if (usuario) {
@@ -255,11 +256,11 @@ window.showTab = function(tab) {
     }
 };
 
+// FUNÇÃO ALTERADA: Agora simula o envio do código
 window.handleSignup = async function() {
     const nameEl = document.getElementById('signup-name');
     const name = nameEl ? nameEl.value : '';
     
-    // Pega o campo que tem valor preenchido
     const signupPhone = document.getElementById('signup-phone');
     const loginPhone = document.getElementById('login-phone');
     const phoneInput = (loginPhone && loginPhone.value.length > 3) ? loginPhone : signupPhone;
@@ -271,29 +272,21 @@ window.handleSignup = async function() {
         return;
     }
 
-    showAlert("Enviando código...");
+    showAlert("Enviando código simulado...");
 
-    try {
-        const res = await fetch('/api/send-code', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ phone })
-        });
-        const data = await res.json();
-        if (data.success) {
-            showAlert("Código enviado! Verifique seu celular.");
-            document.getElementById('form-signup').style.display = 'none';
-            document.getElementById('form-login').style.display = 'none';
-            document.getElementById('step-2').style.display = 'block';
-            window._phoneToVerify = phone;
-        } else {
-            showAlert("Erro ao enviar código. Tente novamente.");
-        }
-    } catch (err) {
-        showAlert("Erro ao enviar código. Tente novamente.");
-    }
+    // Simula o tempo de espera da rede (1.5 segundos)
+    setTimeout(() => {
+        showAlert("Código enviado! Use o código padrão: 123456");
+        
+        document.getElementById('form-signup').style.display = 'none';
+        document.getElementById('form-login').style.display = 'none';
+        document.getElementById('step-2').style.display = 'block';
+        
+        window._phoneToVerify = phone;
+    }, 1500);
 };
 
+// FUNÇÃO ALTERADA: Agora valida o código fixo direto no front-end
 window.validateLogin = async function() {
     const code = document.getElementById('sms-code').value;
     if (code.length !== 6) {
@@ -301,22 +294,12 @@ window.validateLogin = async function() {
         return;
     }
 
-    try {
-        const res = await fetch('/api/verify-code', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ phone: window._phoneToVerify, code })
-        });
-        const data = await res.json();
-        if (data.success) {
-            // Mostra formulário de perfil
-            document.getElementById('step-2').style.display = 'none';
-            document.getElementById('step-3').style.display = 'block';
-        } else {
-            showAlert("Código incorreto ou expirado.");
-        }
-    } catch (err) {
-        showAlert("Erro ao verificar código. Tente novamente.");
+    // Como é portfólio, validamos o código 123456 direto aqui
+    if (code === "123456") {
+        document.getElementById('step-2').style.display = 'none';
+        document.getElementById('step-3').style.display = 'block';
+    } else {
+        showAlert("Código incorreto ou expirado. Dica: use 123456");
     }
 };
 
@@ -380,7 +363,7 @@ function aplicarMascara(input) {
         if (value.length > 2) formatted += " (" + value.slice(2, 4);
         if (value.length > 4) formatted += ") " + value.slice(4, 9);
         if (value.length > 9) formatted += "-" + value.slice(9, 13);
-        e.target.value = formatted;
+         e.target.value = formatted;
     });
 
     input.addEventListener('focus', (e) => {
