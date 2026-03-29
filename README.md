@@ -136,22 +136,22 @@ Ficou interessado ou tem alguma dúvida? Fale comigo diretamente pelos canais ab
 
 <div align="center">
 
-  <h2>💬 Vamos nos conectar</h2>
+<h2>💬 Vamos nos conectar</h2>
 
-  <a href="https://www.instagram.com/fernanda_valeriano.dev/" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-@fernanda.dev-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
-  </a>
+<a href="https://www.instagram.com/fernanda_valeriano.dev/" target="_blank">
+  <img src="https://img.shields.io/badge/Instagram-@fernanda.dev-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+</a>
 
-  <a href="mailto:fernandaramosvaleriano@gmail.com">
-    <img src="https://img.shields.io/badge/E--mail-Contato-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
-  </a>
+<a href="mailto:fernandaramosvaleriano@gmail.com">
+  <img src="https://img.shields.io/badge/E--mail-Contato-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
 
-  <a href="https://github.com/fernandavaleriano" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-Perfil-000000?style=for-the-badge&logo=github&logoColor=white"/>
-  </a>
+<a href="https://github.com/fernandavaleriano" target="_blank">
+  <img src="https://img.shields.io/badge/GitHub-Perfil-000000?style=for-the-badge&logo=github&logoColor=white" />
+</a>
 
-  <br><br>
+<br><br>
 
-  <img src="https://readme-typing-svg.herokuapp.com/?color=E4405F&size=22&center=true&vCenter=true&width=500&lines=Front-end+Developer;UI+Design+Lover;Criando+experiências+digitais+✨" />
+<img src="https://readme-typing-svg.herokuapp.com/?color=E4405F&size=22&center=true&vCenter=true&width=500&lines=Front-end+Developer;UI+Design+Lover;Criando+experiências+digitais+✨" />
 
 </div>
