@@ -119,7 +119,7 @@ npx vercel dev
 Gostou deste projeto? Eu posso criar um site profissional, moderno e sob medida para a sua empresa — com design único, funcionalidades reais e focado em converter visitantes em clientes.
 
 | 🛠️ O que posso desenvolver para você |
-| :--- |
+| --- |
 | 🍕 **Sites para Restaurantes e Delivery:** Cardápio interativo e integração com WhatsApp |
 | 🏪 **Landing Pages de Alta Conversão:** Perfeitas para captação de clientes locais |
 | 🛒 **Lojas Virtuais (E-commerce):** Estrutura completa para você vender seus produtos online |
@@ -132,6 +132,8 @@ Gostou deste projeto? Eu posso criar um site profissional, moderno e sob medida 
 
 Ficou interessado ou tem alguma dúvida? Fale comigo diretamente pelos canais abaixo:
 
+---
+
 <div align="center">
 
 [![Instagram](https://img.shields.io/badge/Me_chame_no_Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/fernanda_valeriano.dev/)
@@ -143,3 +145,4 @@ Ficou interessado ou tem alguma dúvida? Fale comigo diretamente pelos canais ab
 **Criado por Fernanda Valeriano** *Desenvolvido com 🍕 e muito código*
 
 </div>
+
