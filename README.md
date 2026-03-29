@@ -128,21 +128,23 @@ Gostou deste projeto? Eu posso criar um site profissional, moderno e sob medida 
 
 ---
 
+
+
 ## 👩‍💻 Entre em contato e faça seu orçamento!
 
 Ficou interessado ou tem alguma dúvida? Fale comigo diretamente pelos canais abaixo:
 
----
-
 <div align="center">
-
-[![Instagram](https://img.shields.io/badge/Me_chame_no_Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/fernanda_valeriano.dev/)
-[![Gmail](https://img.shields.io/badge/Me_mande_um_e--mail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fernandaramosvaleriano@gmail.com)
-[![GitHub](https://img.shields.io/badge/Veja_meu_GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/fernandavaleriano)
-
-<br>
-
-**Criado por Fernanda Valeriano** *Desenvolvido com 🍕 e muito código*
-
+  <br>
+  <a href="https://www.instagram.com/fernanda_valeriano.dev/" target="_blank">
+    <img src="https://img.shields.io/badge/Me_chame_no_Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
+  </a>
+  <a href="mailto:fernandaramosvaleriano@gmail.com">
+    <img src="https://img.shields.io/badge/Me_mande_um_e--mail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail">
+  </a>
+  <a href="https://github.com/fernandavaleriano" target="_blank">
+    <img src="https://img.shields.io/badge/Veja_meu_GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  </a>
+  <br><br>
+  <strong>Criado por Fernanda Valeriano</strong> | <em>Desenvolvido com 🍕 e muito código</em>
 </div>
-
