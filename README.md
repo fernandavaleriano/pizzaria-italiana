@@ -53,23 +53,22 @@ A **Pizzaria Italiana** é um site completo para uma pizzaria premium, desenvolv
 
 ## 📁 Estrutura do Projeto
 
-\```
-pizzaria-italiana/
-├── api/
-│   ├── send-code.js       # Envia SMS via Twilio
-│   └── verify-code.js     # Verifica o código SMS
-├── css/
-│   ├── base.css           # Reset e estilos globais
-│   ├── navbar.css         # Navegação e hero
-│   ├── secoes.css         # Seções do site
-│   ├── modais.css         # Modais e alertas
-│   └── responsivo.css     # Media queries
-├── imagens/               # Imagens geradas por IA
-├── videos/                # Vídeo de fundo
-├── index.html             # Página principal
-├── script.js              # Lógica JavaScript
-└── package.json           # Dependências Node.js
-\```
+| Pasta / Arquivo | Descrição |
+| :--- | :--- |
+| 📁 `api/` | **Backend (Serverless):** Contém as funções Node que rodam na Vercel |
+| &nbsp;&nbsp;&nbsp;&nbsp;📄 `send-code.js` | Dispara a requisição de SMS para a API da Twilio |
+| &nbsp;&nbsp;&nbsp;&nbsp;📄 `verify-code.js` | Valida se o código digitado pelo usuário está correto |
+| 📁 `css/` | **Estilização Modular:** CSS dividido por responsabilidade |
+| &nbsp;&nbsp;&nbsp;&nbsp;📄 `base.css` | Reset de estilos, variáveis de cor e fontes globais |
+| &nbsp;&nbsp;&nbsp;&nbsp;📄 `navbar.css` | Estilos exclusivos do menu de navegação e seção Hero |
+| &nbsp;&nbsp;&nbsp;&nbsp;📄 `secoes.css` | Estilização do cardápio, sobre nós, rodapé e seções gerais |
+| &nbsp;&nbsp;&nbsp;&nbsp;📄 `modais.css` | Estilos visuais das janelas pop-up (carrinho e login) |
+| &nbsp;&nbsp;&nbsp;&nbsp;📄 `responsivo.css` | Media queries para deixar o site perfeito em celulares |
+| 📁 `imagens/` | Banco de imagens do site (todas geradas por IA) |
+| 📁 `videos/` | Mídias em vídeo usadas no fundo das seções |
+| 📄 `index.html` | Estrutura principal e esqueleto de todas as seções do site |
+| 📄 `script.js` | Lógica do Frontend (Carrinho, Máscaras, Autenticação simulada) |
+| 📄 `package.json` | Gerenciador de dependências e scripts do projeto |
 
 ---
 
