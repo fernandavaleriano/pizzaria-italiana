@@ -111,36 +111,35 @@ npx vercel dev
 
 ---
 
-## 💼 Quer um site assim para o seu negócio?
+---
 
-> ### 🚀 Transforme sua presença digital!
->
-> Gostou deste projeto? Posso criar um site profissional e moderno para o seu negócio — com design exclusivo, funcionalidades reais e entrega rápida.
->
-> **O que posso desenvolver para você:**
-> - 🍕 Sites para restaurantes e delivery
-> - 🏪 Landing pages para negócios locais
-> - 🛒 Lojas virtuais
-> - 💼 Portfólios profissionais
-> - 📱 Sites responsivos para mobile
->
-> **Entre em contato e faça seu orçamento:**
->
-> 📸 Instagram: [@fernanda_valeriano.dev](https://www.instagram.com/fernanda_valeriano.dev/)
-> 📧 E-mail: fernandaramosvaleriano@gmail.com
+## 💼 Quer um site exclusivo para o seu negócio?
+
+### 🚀 Transforme sua presença digital!
+Gostou deste projeto? Eu posso criar um site profissional, moderno e sob medida para a sua empresa — com design único, funcionalidades reais e focado em converter visitantes em clientes.
+
+| 🛠️ O que posso desenvolver para você |
+| :--- |
+| 🍕 **Sites para Restaurantes e Delivery:** Cardápio interativo e integração com WhatsApp |
+| 🏪 **Landing Pages de Alta Conversão:** Perfeitas para captação de clientes locais |
+| 🛒 **Lojas Virtuais (E-commerce):** Estrutura completa para você vender seus produtos online |
+| 💼 **Portfólios Profissionais:** Destaque suas habilidades e conquiste mais espaço no mercado |
+| 📱 **Design Totalmente Responsivo:** Sites que ficam perfeitos e rápidos em qualquer celular |
 
 ---
 
-## 👩‍💻 Desenvolvedora
+## 👩‍💻 Entre em contato e faça seu orçamento!
+
+Ficou interessado ou tem alguma dúvida? Fale comigo diretamente pelos canais abaixo:
 
 <div align="center">
 
-**Fernanda Valeriano**
+[![Instagram](https://img.shields.io/badge/Me_chame_no_Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/fernanda_valeriano.dev/)
+[![Gmail](https://img.shields.io/badge/Me_mande_um_e--mail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fernandaramosvaleriano@gmail.com)
+[![GitHub](https://img.shields.io/badge/Veja_meu_GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/fernandavaleriano)
 
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/fernanda_valeriano.dev/)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white)](mailto:fernandaramosvaleriano@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white)](https://github.com/fernandavaleriano)
+<br>
 
-*Desenvolvido com 🍕 e muito café*
+**Criado por Fernanda Valeriano** *Desenvolvido com 🍕 e muito código*
 
 </div>
