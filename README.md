@@ -74,14 +74,19 @@ A **Pizzaria Italiana** é um site completo para uma pizzaria premium, desenvolv
 
 ## 🚀 Como Rodar Localmente
 
-\```bash
-# Clone o repositório
-git clone https://github.com/fernandavaleriano/pizzaria-italiana.git
+Siga o passo a passo abaixo para clonar o projeto e executá-lo na sua máquina:
 
-# Entre na pasta
+### 1️⃣ Clonar e Instalar
+No seu terminal, execute os seguintes comandos:
+
+```bash
+# Clone o repositório
+git clone [https://github.com/fernandavaleriano/pizzaria-italiana.git](https://github.com/fernandavaleriano/pizzaria-italiana.git)
+
+# Entre na pasta do projeto
 cd pizzaria-italiana
 
-# Instale as dependências
+# Instale as dependências do projeto
 npm install
 
 # Configure as variáveis de ambiente
