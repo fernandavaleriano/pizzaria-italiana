@@ -115,42 +115,55 @@ npx vercel dev
 
 ## 💼 Quer um site exclusivo para o seu negócio?
 
-### 🚀 Transforme sua presença digital!
-Gostou deste projeto? Eu posso criar um site profissional, moderno e sob medida para a sua empresa — com design único, funcionalidades reais e focado em converter visitantes em clientes.
+### 🚀 Transforme sua presença digital
 
-| 🛠️ O que posso desenvolver para você |
-| --- |
-| 🍕 **Sites para Restaurantes e Delivery:** Cardápio interativo e integração com WhatsApp |
-| 🏪 **Landing Pages de Alta Conversão:** Perfeitas para captação de clientes locais |
-| 🛒 **Lojas Virtuais (E-commerce):** Estrutura completa para você vender seus produtos online |
-| 💼 **Portfólios Profissionais:** Destaque suas habilidades e conquiste mais espaço no mercado |
-| 📱 **Design Totalmente Responsivo:** Sites que ficam perfeitos e rápidos em qualquer celular |
+<p>
+Gostou deste projeto? Eu posso criar um site profissional, moderno e sob medida para sua empresa — com design estratégico, funcionalidades reais e foco total em conversão de clientes.
+</p>
 
 ---
 
+### 🛠️ O que posso desenvolver para você
 
+- 🍕 **Sites para Restaurantes e Delivery**  
+- 🏪 **Landing Pages de Alta Conversão**  
+- 🛒 **Lojas Virtuais (E-commerce)**  
+- 💼 **Portfólios Profissionais**  
+- 📱 **Design 100% Responsivo**
 
-## 👩‍💻 Entre em contato e faça seu orçamento!
+---
 
-Ficou interessado ou tem alguma dúvida? Fale comigo diretamente pelos canais abaixo:
+## 📩 Contato
 
+<div align="center">
 
+<img src="https://readme-typing-svg.herokuapp.com/?color=E4405F&size=22&center=true&vCenter=true&width=500&lines=Front-end+Developer;UI+Design+Lover;Criando+experiências+digitais+✨" />
 
-💬 Vamos nos conectar
+<br><br>
 
-<a href="https://www.instagram.com/fernanda_valeriano.dev/" target="_blank">
-  <img src="https://img.shields.io/badge/Instagram-@fernanda.dev-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+<a href="https://github.com/fernandavaleriano" target="_blank">
+  <img src="https://img.shields.io/badge/GitHub-Perfil-111111?style=for-the-badge&logo=github&logoColor=white" />
 </a>
+
+<br>
+
+<a href="https://wa.me/5527999999999" target="_blank">
+  <img src="https://img.shields.io/badge/WhatsApp-Fale%20comigo-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+</a>
+
+<br>
 
 <a href="mailto:fernandaramosvaleriano@gmail.com">
   <img src="https://img.shields.io/badge/E--mail-Contato-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
 
-<a href="https://github.com/fernandavaleriano" target="_blank">
-  <img src="https://img.shields.io/badge/GitHub-Perfil-000000?style=for-the-badge&logo=github&logoColor=white" />
-</a>
-
 <br><br>
 
-<img src="https://readme-typing-svg.herokuapp.com/?color=E4405F&size=22&center=true&vCenter=true&width=500&lines=Front-end+Developer;UI+Design+Lover;Criando+experiências+digitais+✨" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=E4405F&height=100&section=footer"/>
 
+<p>
+<strong>✨ Criado por Fernanda Valeriano ✨</strong><br>
+<em>Desenvolvido com 💻, ☕ e muito código</em>
+</p>
+
+</div>
