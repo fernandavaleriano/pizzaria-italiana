@@ -26,7 +26,7 @@ A **Pizzaria Italiana** é um site completo para uma pizzaria premium, desenvolv
 
 ## ✨ Funcionalidades
 
-- - 🔐 **Fluxo de Login por SMS** via Twilio Verify — o fluxo completo está ativo (no site de demonstração, utilize o código padrão `123456` para testar sem custos de API).
+- 🔐 **Fluxo de Login por SMS** via Twilio Verify — o fluxo completo está ativo (no site de demonstração, utilize o código padrão `123456` para testar sem custos de API).
 - 👤 **Perfil do usuário** com nome, telefone e endereço salvos localmente
 - 🛒 **Carrinho de compras** completo com controle de quantidade
 - 📱 **Finalização via WhatsApp** — o pedido vai direto para o restaurante
