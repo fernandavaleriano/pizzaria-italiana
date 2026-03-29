@@ -1,3 +1,23 @@
+// --- MENU HAMBURGUER ---
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger-menu');
+    const drawer = document.getElementById('drawer-menu');
+    const closeDrawer = document.getElementById('close-drawer');
+    if (hamburger && drawer && closeDrawer) {
+        hamburger.addEventListener('click', () => {
+            drawer.classList.add('open');
+        });
+        closeDrawer.addEventListener('click', () => {
+            drawer.classList.remove('open');
+        });
+        // Fecha o drawer ao clicar fora dele
+        window.addEventListener('click', (e) => {
+            if (drawer.classList.contains('open') && !drawer.contains(e.target) && e.target !== hamburger) {
+                drawer.classList.remove('open');
+            }
+        });
+    }
+});
 /* PROJETO: PIZZARIA ITALIANA
    DESENVOLVEDOR: FERNANDA VALERIANO
 */
