@@ -134,9 +134,9 @@ Gostou deste projeto? Eu posso criar um site profissional, moderno e sob medida 
 
 Ficou interessado ou tem alguma dúvida? Fale comigo diretamente pelos canais abaixo:
 
-<div align="center">
 
-<h2>💬 Vamos nos conectar</h2>
+
+💬 Vamos nos conectar
 
 <a href="https://www.instagram.com/fernanda_valeriano.dev/" target="_blank">
   <img src="https://img.shields.io/badge/Instagram-@fernanda.dev-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
@@ -154,4 +154,3 @@ Ficou interessado ou tem alguma dúvida? Fale comigo diretamente pelos canais ab
 
 <img src="https://readme-typing-svg.herokuapp.com/?color=E4405F&size=22&center=true&vCenter=true&width=500&lines=Front-end+Developer;UI+Design+Lover;Criando+experiências+digitais+✨" />
 
-</div>
