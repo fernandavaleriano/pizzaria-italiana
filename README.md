@@ -117,53 +117,35 @@ npx vercel dev
 
 ### 🚀 Transforme sua presença digital
 
-<p>
+
 Gostou deste projeto? Eu posso criar um site profissional, moderno e sob medida para sua empresa — com design estratégico, funcionalidades reais e foco total em conversão de clientes.
-</p>
+
 
 ---
 
 ### 🛠️ O que posso desenvolver para você
 
-- 🍕 **Sites para Restaurantes e Delivery**  
-- 🏪 **Landing Pages de Alta Conversão**  
-- 🛒 **Lojas Virtuais (E-commerce)**  
-- 💼 **Portfólios Profissionais**  
-- 📱 **Design 100% Responsivo**
+- 🍕 Sites para Restaurantes e Delivery 
+- 🏪 Landing Pages de Alta Conversão  
+- 🛒 Lojas Virtuais (E-commerce) 
+- 💼 Portfólios Profissionais 
+- 📱  Design 100% Responsivo
 
 ---
 
 ## 📩 Contato
 
 <div align="center">
+ 
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/fernandavaleriano)
 
-<img src="https://readme-typing-svg.herokuapp.com/?color=E4405F&size=22&center=true&vCenter=true&width=500&lines=Front-end+Developer;UI+Design+Lover;Criando+experiências+digitais+✨" />
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5527988796796?text=Olá%20Fernanda!%20Vim%20pelo%20seu%20portfólio%20e%20tenho%20interesse%20nos%20seus%20serviços.)
 
-<br><br>
+[![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fernandaramosvaleriano@gmail.com)
 
-<a href="https://github.com/fernandavaleriano" target="_blank">
-  <img src="https://img.shields.io/badge/GitHub-Perfil-111111?style=for-the-badge&logo=github&logoColor=white" />
+<a href="https://instagram.com/fernanda_valeriano.dev/" target="_blank">
+  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
 </a>
 
-<br>
 
-<a href="https://wa.me/5527999999999" target="_blank">
-  <img src="https://img.shields.io/badge/WhatsApp-Fale%20comigo-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-</a>
-
-<br>
-
-<a href="mailto:fernandaramosvaleriano@gmail.com">
-  <img src="https://img.shields.io/badge/E--mail-Contato-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
-
-<br><br>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=E4405F&height=100&section=footer"/>
-
-<p>
-<strong>✨ Criado por Fernanda Valeriano ✨</strong><br>
-<em>Desenvolvido com 💻, ☕ e muito código</em>
-</p>
-
-</div>
+<div align="center">
