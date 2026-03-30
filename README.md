@@ -135,16 +135,8 @@ Gostou deste projeto? Eu posso criar um site profissional, moderno e sob medida 
 
 ## 📩 Contato
 
-<div align="center">
+### 📸 Me siga no Instagram
+👉 https://instagram.com/fernanda_valeriano.dev/
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/fernandavaleriano)
-
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/27988796796)
-
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fernandaramosvaleriano@gmail.com)
-
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/fernanda_valeriano.dev/)
-
-</div>
 
 
