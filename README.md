@@ -143,9 +143,4 @@ Gostou deste projeto? Eu posso criar um site profissional, moderno e sob medida 
 
 [![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fernandaramosvaleriano@gmail.com)
 
-<a href="https://instagram.com/fernanda_valeriano.dev/" target="_blank">
-  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
-</a>
-
-
 <div align="center">
